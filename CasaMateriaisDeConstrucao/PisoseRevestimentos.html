@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/l1.jpg" type="image/png"> <!-- Ícone -->
+    <title>Casa Materias De Construção</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .card-container {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+  
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      width: 320px;
+      text-align: center;
+    }
+  
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .btn-candidatar, .btn-detalhes {
+      border: 2px solid #000000;
+      background-color: transparent;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 12px;
+      display: inline-block;
+    }
+  
+    .btn-candidatar:hover, .btn-detalhes:hover {
+      background-color: #000000;
+      color: white;
+    }
+  
+    .modal-content {
+      padding: 20px;
+    }
+  </style>
+<header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Casa Materias De Construção</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nossahistoria.html">Nossa História</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ParasuaConstrucao.html">Para sua construção</a></li>
+                            <li><a class="dropdown-item" href="Ferramentas.html">Ferramentas</a></li>
+                            <li><a class="dropdown-item" href="PortaseJanelas.html">Portas e Janelas</a></li>
+                            <li><a class="dropdown-item" href="PisosRevestimentos.html">Pisos e revestimentos</a></li>
+                            <li><a class="dropdown-item" href="Materiaishidraulicos.html">Materiais hidráulicos</a></li>
+                            <li><a class="dropdown-item" href="MateriaisEletricos.html">Materiais elétricos</a></li>
+                            <li><a class="dropdown-item" href="Tintas.html">Tintas</a></li>
+                            <li><a class="dropdown-item" href="Vernizes.html">Vernizes</a></li>
+                            <li><a class="dropdown-item" href="Esmaltes.html">Esmaltes</a></li>
+                            <li><a class="dropdown-item" href="Metais.html">Metais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Carreiras.html">Carreiras</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid p-0">
+        <div class="bg-dark text-white text-center py-4">
+          
+          <h1><strong>Piso e Revestimentos</strong></h1>
+        </div>
+        <div class="container">
+            
+            <div class="card-container">
+              <div class="card">
+                <img src="img/esmaltebrilhante.jpg" alt="Produto 1">
+                <h4>Produto 1</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/proteçaobrilhanteesmalte.jpg" alt="Produto 2">
+                <h4>Produto 2</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/proteçãofoscoesmalte.jpg" alt="Produto 3">
+                <h4>Produto 3</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/acetinadoesmalte.jpg" alt="Produto 4">
+                <h4>Produto 4</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal4">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/multisuperficiesesmalte.jpg" alt="Produto 5">
+                <h4>Produto 5</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal5">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/multissuperficie3,6.jpg              " alt="Produto 6">
+                <h4>Produto 6</h4>
+                <h5><strong>R$ 29,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal6">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          
+         
+          <div class="modal fade" id="modal1" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 1</h5>
+                <p>Informações detalhadas sobre o produto 1.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal2" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 2</h5>
+                <p>Informações detalhadas sobre o produto 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal3" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 3</h5>
+                <p>Informações detalhadas sobre o produto 3.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal4" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 4</h5>
+                <p>Informações detalhadas sobre o produto 4.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal5" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 5</h5>
+                <p>Informações detalhadas sobre o produto 5.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal6" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Produto 6</h5>
+                <p>Informações detalhadas sobre o produto 6.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Casa Materias De Construção. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

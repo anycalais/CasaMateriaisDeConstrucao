@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/l1.jpg" type="image/png"> <!-- Ícone -->
+    <title>Casa Materias De Construção</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .card-container {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+  
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      width: 320px;
+      text-align: center;
+    }
+  
+    .card img {
+      width: 70%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .btn-candidatar, .btn-detalhes {
+      border: 2px solid #000000;
+      background-color: transparent;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 12px;
+      display: inline-block;
+    }
+  
+    .btn-candidatar:hover, .btn-detalhes:hover {
+      background-color: #000000;
+      color: white;
+    }
+  
+    .modal-content {
+      padding: 20px;
+    }
+  </style>
+<header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Casa Materias De Construção</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nossahistoria.html">Nossa História</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ParasuaConstrucao.html">Para sua construção</a></li>
+                            <li><a class="dropdown-item" href="Ferramentas.html">Ferramentas</a></li>
+                            <li><a class="dropdown-item" href="PortaseJanelas.html">Portas e Janelas</a></li>
+                            <li><a class="dropdown-item" href="PisosRevestimentos.html">Pisos e revestimentos</a></li>
+                            <li><a class="dropdown-item" href="Materiaishidraulicos.html">Materiais hidráulicos</a></li>
+                            <li><a class="dropdown-item" href="MateriaisEletricos.html">Materiais elétricos</a></li>
+                            <li><a class="dropdown-item" href="Tintas.html">Tintas</a></li>
+                            <li><a class="dropdown-item" href="Vernizes.html">Vernizes</a></li>
+                            <li><a class="dropdown-item" href="Esmaltes.html">Esmaltes</a></li>
+                            <li><a class="dropdown-item" href="Metais.html">Metais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Carreiras.html">Carreiras</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid p-0">
+        <div class="bg-dark text-white text-center py-4">
+          
+          <h1><strong>Para sua Construção</strong></h1>
+        </div>
+        <div class="container">
+            
+            <div class="card-container">
+              <div class="card">
+                <img src="img/c2.webp" alt="Produto 1">
+                <h4>Cimento CPIII-32 RS 50Kg CSN</h4>
+                <h5><strong>R$ 27,95/un</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/c4.webp" alt="Produto 2">
+                <h4>Telha Ondulada Cimentícia Cinza</h4>
+                <h5><strong>R$ 49,90/un</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/c3.webp" alt="Produto 3">
+                <h4>Bloco Cerâmico de Vedação Baianinho</h4>
+                <h5><strong>R$ 0,90/un</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/c1.webp" alt="Produto 4">
+                <h4>Areia Média 20Kg Pedrasil</h4>
+                <h5><strong>R$ 4,93/un</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal4">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/c5.webp" alt="Produto 5">
+                <h4>Argamassa Interna Porcelanato Cinza</h4>
+                <h5><strong>R$ 21,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal5">Ver detalhes</button>
+              </div>
+              <div class="card">
+                <img src="img/c6.webp" alt="Produto 6">
+                <h4>Gesso Cola para Forros e Fixação Branco</h4>
+                <h5><strong>R$ 13,90</strong></h5>
+                <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal6">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          
+         
+          <div class="modal fade" id="modal1" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>O cimento CP III é um item fundamental na construção civil, composto por uma mistura de componentes químicos, argila e calcário, diferenciado apenas de acordo com a adição de outros materiais, no caso do CP3, a adição é a escória.
+<br><br>
+                  Utilizado para diversos  tipos de projetos como preparo de misturas para argamassa de revestimento ou assentamento; construção de concreto armado além de revestimentos para pavimentos e pisos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal2" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>
+                  A Telha Brasilit ondulada é um produto muito utilizado para cobertura de telhados residenciais, comerciais, industriais, galpões, escolas e hospitais. Esse produto também é conhecido como telha fibrocimento e popularmente conhecida como telha de amianto, embora o amianto já não seja mais utilizado na sua composição.
+                  <br><br>
+                  A Telha Brasilit 2,44x1,10m 5mm é fabricada utilizando cimento reforçado com fio sintético (tecnologia CRFS). Ela é produzida na cor cinza e, com as suas medidas, é ideal para diversos projetos de coberturas. A telha Brasilit possui qualidade garantida pela norma técnica NBR 15210 (2013/2014), com 5 anos de garantia do fabricante desde que observadas todas as normas de instalação e transporte das telhas. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal3" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>O Bloco Cerâmico 9x19x19cm é uma escolha ideal para alvenaria de vedação em paredes divisórias internas e externas. Com dimensões de 9 cm de largura, 19 cm de altura e 19 cm de comprimento, este bloco é amplamente utilizado em construções residenciais devido às suas excelentes características de ventilação e isolamento.
+<br><br>
+                  Fabricado em cerâmica, o Bloco Cerâmico Baianinho pertence à classe VED15, sendo indicado principalmente para vedação. Apesar de não ser adequado para sustentar grandes pesos, ele oferece um excelente controle de umidade e circulação de ar, proporcionando um ambiente mais saudável e confortável. Suas propriedades de isolamento acústico e térmico fazem dele uma excelente opção para residências, lojas e outros projetos que buscam eficiência e conforto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal4" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>O saco de areia média para construção da Pedrasil é utilizado para produzir chapisco rolado. Possui granulometria média o que contribui para um acabamento mais seguro e eficaz.
+<br><br>
+                  Essa areia para construção é utilizada para chapisco rolado, sendo ideal também para contra piso, assentamento de alvenaria, vedação estrutural e revestimentos tanto externos quanto internos.
+                  <br><br>
+                  Na Obramax você encontra esse saco de areia 20Kg disponível em embalagem que facilita a organização e limpeza da sua obra, tornando-a também mais econômica e com menos desperdícios.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal5" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>A argamassa para porcelanato da Fortaleza é ideal para assentamentos de placas cerâmicas e porcelanatos com até 100x100cm.  
+<br><br>
+                  Por ser classificada como uma argamassa interna, recomendamos a sua aplicação no chão e paredes de salas, quartos, cozinhas, banheiros, sacadas e varandas cobertas. 
+                  <br><br>
+                  Fabricada na cor cinza, essa argamassa para porcelanato de 20kg possui um rendimento de até 6,kg/m².  
+                  <br><br>
+                  Para garantir um serviço de qualidade utilizando a argamassa da Fortaleza, certifique-se que o local esteja limpo, seco e sem partes soltas. </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal6" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <h5>Características do produto</h5>
+                <p>O Gesso Cola 5Kg da Gesso América é a escolha ideal para quem busca um produto de alta qualidade, essencial para unir peças e artefatos em gesso com segurança e durabilidade. Desenvolvido para atender tanto profissionais da construção civil quanto amadores, este gesso cola oferece uma solução confiável e de fácil aplicação, garantindo que cada projeto seja concluído com excelência.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Casa Materias De Construção. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
